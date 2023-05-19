@@ -81,6 +81,7 @@ resource "aws_rds_cluster" "app5-rds-cluster" {
     yor_trace            = "0b2bea23-5ca5-4bd1-956e-b9ed978daadf"
     yor_name             = "app5-rds-cluster"
   }
+  storage_encrypted = true
 }
 
 resource "aws_rds_cluster" "app6-rds-cluster" {
@@ -150,5 +151,4 @@ resource "aws_rds_cluster" "app9-rds-cluster" {
     yor_trace            = "a0c98536-c751-4743-92f1-a106ce750249"
     yor_name             = "app9-rds-cluster"
   }
-  storage_encrypted = true
 }
